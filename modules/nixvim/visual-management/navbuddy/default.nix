@@ -1,0 +1,1 @@
+{ plugins.navbuddy.enable = true; }
