@@ -1,6 +1,6 @@
 {
   plugins.conform-nvim = {
-    enable = true;
+    enable = false;
     settings = {
       formatters_by_ft = {
         nix = [ "nixfmt" ];
@@ -53,18 +53,18 @@
       notify_no_formatters = true;
     };
   };
-  keymaps = [
-    {
-      mode = "";
-      key = "<leader>r";
-      action.__raw = ''
-        function()
-          require('conform').format { async = true, lsp_fallback = true }
-        end
-      '';
-      options = {
-        desc = "[F]ormat buffer";
-      };
-    }
-  ];
+  # keymaps = [
+  #   {
+  #     mode = "";
+  #     key = "<leader>r";
+  #     action.__raw = ''
+  #       function()
+  #         require('conform').format { async = true, lsp_fallback = true }
+  #       end
+  #     '';
+  #     options = {
+  #       desc = "[F]ormat buffer";
+  #     };
+  #   }
+  # ];
 }
