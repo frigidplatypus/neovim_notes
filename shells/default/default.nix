@@ -8,12 +8,11 @@
 }:
 mkShell {
   packages = with pkgs; [
-    frgd-notes.neovim
+    frgd-notes.notes
   ];
 
   shellHook = ''
     echo 🔨 Welcome to ${namespace}
-
 
   '';
 }
