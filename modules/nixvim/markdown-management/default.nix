@@ -1,8 +1,25 @@
 {
   plugins = {
-    render-markdown.enable = true;
+    # render-markdown.enable = true;
+    obsidian = {
+      enable = true;
+      settings = {
+        completion.nvim_cmp = true;
+        daily_notes = {
+          folder = "~/notes/Daily Notes";
+          date_format = "%Y-%m-%d";
+        };
+        workspaces = [
+          {
+            name = "Notes";
+            path = "~/notes/";
+          }
+        ];
+      };
+      # path = "/path/to/obsidian";
+    };
     glow.enable = true;
-    markdown-preview.enable = true;
-    mkdnflow.enable = true;
+    # markdown-preview.enable = true;
+    # mkdnflow.enable = true;
   };
 }
