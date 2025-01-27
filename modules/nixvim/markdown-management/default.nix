@@ -6,13 +6,13 @@
       settings = {
         completion.nvim_cmp = true;
         daily_notes = {
-          folder = "~/notes/Daily Notes";
+          folder = "Daily Notes";
           date_format = "%Y-%m-%d";
         };
         workspaces = [
           {
             name = "Notes";
-            path = "~/notes/";
+            path = "~/Notes/";
           }
         ];
       };
