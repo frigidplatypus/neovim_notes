@@ -7,7 +7,7 @@
 }:
 
 with lib;
-with lib.frgd-notes;
+with lib.${namespace};
 
 let
   notes = pkgs.writeShellScriptBin "notes" ''
