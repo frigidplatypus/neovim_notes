@@ -12,7 +12,7 @@
         workspaces = [
           {
             name = "Notes";
-            path = "~/Notes/";
+            path = "~/notes/";
           }
         ];
       };
