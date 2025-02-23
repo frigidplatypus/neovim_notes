@@ -1,6 +1,6 @@
 {
   plugins = {
-    # render-markdown.enable = true;
+    render-markdown.enable = true;
     obsidian = {
       enable = true;
       settings = {
@@ -19,7 +19,19 @@
       # path = "/path/to/obsidian";
     };
     glow.enable = true;
-    # markdown-preview.enable = true;
+    markdown-preview.enable = true;
     # mkdnflow.enable = true;
   };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>fg";
+      action = "<cmd>ObsidianSearch<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader><leader>";
+      action = "<cmd>Telescope find_files cwd=~/notes/<cr>";
+    }
+  ];
 }
